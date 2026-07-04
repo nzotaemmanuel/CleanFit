@@ -54,7 +54,7 @@ export default function Contact() {
             {/* Map box */}
             <div className="contact-map-mock">
               {/* embedded Google Maps iframe for Oreyo, Ikorodu, Lagos */}
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15851.340277340026!2d3.513511874229618!3d6.667362086431969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bef5c4c4786d7%3A0xe13bdfc9c223c6f2!2sOreyo%2C%20Ikorodu!5e0!3m2!1sen!2sng!4v1719846200000!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15851.340277340026!2d3.513511874229618!3d6.667362086431969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bef5c4c4786d7%3A0xe13bdfc9c223c6f2!2sOreyo%2C%20Ikorodu!5e0!3m2!1sen!2sng!4v1719846200000!5m2!1sen!2sng" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
           </div>
@@ -64,26 +64,26 @@ export default function Contact() {
             <h3 >Send a Message</h3>
             <p >Fill out this form and we'll reply to your email or call you directly to discuss garment care.</p>
             
-            <form id="contact-form" novalidate="">
+            <form id="contact-form" noValidate>
               <div className="form-group">
                 <label htmlFor="contact-name" className="form-label">Full Name</label>
-                <input type="text" id="contact-name" className="form-control" placeholder="e.g. Tunde Balogun" required="" />
+                <input type="text" id="contact-name" className="form-control" placeholder="e.g. Tunde Balogun" required />
               </div>
               
               <div className="form-grid">
                 <div className="form-group">
                   <label htmlFor="contact-email" className="form-label">Email Address</label>
-                  <input type="email" id="contact-email" className="form-control" placeholder="tunde@email.com" required="" />
+                  <input type="email" id="contact-email" className="form-control" placeholder="tunde@email.com" required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="contact-phone" className="form-label">Phone Number</label>
-                  <input type="tel" id="contact-phone" className="form-control" placeholder="e.g. 080XXXXXXXX" required="" />
+                  <input type="tel" id="contact-phone" className="form-control" placeholder="e.g. 080XXXXXXXX" required />
                 </div>
               </div>
               
               <div className="form-group">
                 <label htmlFor="contact-message" className="form-label">Message / Details of Request</label>
-                <textarea id="contact-message" className="form-control" placeholder="Please specify items, special fabric instructions, or any general laundry queries..." required=""></textarea>
+                <textarea id="contact-message" className="form-control" placeholder="Please specify items, special fabric instructions, or any general laundry queries..." required></textarea>
               </div>
               
               <button type="submit" className="btn btn-primary" >Send Message</button>

@@ -54,25 +54,25 @@ export default function Corporate() {
           <h3 className="corporate-form-title">Request Corporate Account</h3>
           <p className="corporate-form-subtitle">Submit details about your business and estimated monthly volume. Our account liaison will contact you within 24 hours.</p>
           
-          <form id="corporate-form" novalidate="">
+          <form id="corporate-form" noValidate>
             <div className="form-group">
               <label htmlFor="corp-company" className="form-label">Company Name</label>
-              <input type="text" id="corp-company" className="form-control" placeholder="e.g. Lagos Event Space Ltd" required="" />
+              <input type="text" id="corp-company" className="form-control" placeholder="e.g. Lagos Event Space Ltd" required />
             </div>
             
             <div className="form-group">
               <label htmlFor="corp-contact" className="form-label">Contact Person Name</label>
-              <input type="text" id="corp-contact" className="form-control" placeholder="e.g. Ngozi Adewale" required="" />
+              <input type="text" id="corp-contact" className="form-control" placeholder="e.g. Ngozi Adewale" required />
             </div>
             
             <div className="form-grid">
               <div className="form-group">
                 <label htmlFor="corp-email" className="form-label">Business Email</label>
-                <input type="email" id="corp-email" className="form-control" placeholder="ngozi@company.com" required="" />
+                <input type="email" id="corp-email" className="form-control" placeholder="ngozi@company.com" required />
               </div>
               <div className="form-group">
                 <label htmlFor="corp-phone" className="form-label">Business Phone</label>
-                <input type="tel" id="corp-phone" className="form-control" placeholder="080XXXXXXXX" required="" />
+                <input type="tel" id="corp-phone" className="form-control" placeholder="080XXXXXXXX" required />
               </div>
             </div>
             
