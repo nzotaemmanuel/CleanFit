@@ -70,6 +70,75 @@ export function initForms() {
     const today = new Date().toISOString().split('T')[0];
     dateInput.setAttribute('min', today);
   }
+
+  // Booking Modal Controls
+  const bookingModal = document.getElementById('booking-modal');
+  const openModalBtns = document.querySelectorAll('.btn-trigger-booking');
+  const closeModalBtn = document.getElementById('close-booking-modal');
+
+  function openModal(estimateData = null) {
+    if (!bookingModal) return;
+    
+    const summaryBox = document.getElementById('modal-booking-summary-box');
+    const hiddenDetails = document.getElementById('booking-estimate-details');
+    const hiddenTotal = document.getElementById('booking-estimate-total');
+
+    if (estimateData && summaryBox) {
+      // User booked from calculator
+      summaryBox.style.display = 'block';
+      const summaryItems = summaryBox.querySelector('.booking-summary-items');
+      if (summaryItems) summaryItems.innerHTML = estimateData.summary;
+      const totalSpan = summaryBox.querySelector('.booking-summary-total span');
+      if (totalSpan) totalSpan.textContent = estimateData.total.toLocaleString();
+      
+      // Store in hidden fields for submission
+      if (hiddenDetails) hiddenDetails.value = estimateData.summary;
+      if (hiddenTotal) hiddenTotal.value = estimateData.total.toString();
+    } else {
+      // General booking
+      if (summaryBox) summaryBox.style.display = 'none';
+      if (hiddenDetails) hiddenDetails.value = 'General Pickup Request';
+      if (hiddenTotal) hiddenTotal.value = '0';
+    }
+
+    bookingModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    if (!bookingModal) return;
+    bookingModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+
+  openModalBtns.forEach(btn => {
+    // Remove existing listener to prevent duplicates in React StrictMode
+    const newBtn = btn.cloneNode(true);
+    if (btn.parentNode) {
+      btn.parentNode.replaceChild(newBtn, btn);
+      newBtn.addEventListener('click', () => openModal(null));
+    }
+  });
+
+  if (closeModalBtn) {
+    const newCloseBtn = closeModalBtn.cloneNode(true);
+    if (closeModalBtn.parentNode) {
+      closeModalBtn.parentNode.replaceChild(newCloseBtn, closeModalBtn);
+      newCloseBtn.addEventListener('click', closeModal);
+    }
+    
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) closeModal();
+    });
+  }
+
+  // Listen to pricing calculator booking trigger
+  const openModalHandler = (e) => {
+    openModal(e.detail);
+  };
+  window.removeEventListener('openBookingModal', window._openModalHandler);
+  window._openModalHandler = openModalHandler;
+  window.addEventListener('openBookingModal', openModalHandler);
 }
 
 // Handler functions

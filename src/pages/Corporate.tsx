@@ -7,7 +7,7 @@ export default function Corporate() {
     <Layout>
       
 {/* CORPORATE SOLUTIONS PAGE SECTION */}
-    <section id="corporate" className="page-section corporate-section">
+    <section id="corporate" className="page-section corporate-section active">
       <div className="section-container corporate-grid">
         
         {/* Left details */}

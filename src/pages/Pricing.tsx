@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
 import SplineViewer from '../components/SplineViewer';
+// @ts-ignore
+import { PricingCalculator } from '../calculator';
 
 export default function Pricing() {
+  useEffect(() => {
+    new PricingCalculator();
+  }, []);
+
   return (
     <Layout>
       

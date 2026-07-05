@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="copyright">&copy; 2026 CleanFit. All rights reserved. Professional Laundry Services in Lagos.</div>
         <div className="footer-bottom-links">
           <Link to="/privacy">Privacy Policy</Link>
-          <Link to="/faq">Terms of Service</Link>
+          <Link to="/privacy">Terms of Service</Link>
         </div>
       </div>
     </footer>
