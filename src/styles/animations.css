@@ -68,13 +68,13 @@
 
 /* Page transitions */
 .page-section {
-  display: none;
-  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
 .page-section.active {
-  display: flex;
-  animation: fadeIn 0.5s ease-out forwards;
+  /* Retained for backward compatibility if any JS uses it, but not needed for display */
 }
 
 /* 3D Spline Fallback Graphics & Spinner */
