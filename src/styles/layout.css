@@ -30,6 +30,10 @@ section {
   position: relative;
 }
 
+main#app > section:first-of-type:not(.hero-section) {
+  padding-top: calc(var(--header-height) + 80px);
+}
+
 .section-container {
   max-width: var(--max-width);
   margin: 0 auto;
