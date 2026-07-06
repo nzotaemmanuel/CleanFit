@@ -13,7 +13,7 @@ export default function Privacy() {
           <h2 className="section-title">Privacy Policy</h2>
           <p >Last updated: July 2026</p>
           {/* Page 3D Object */}
-          <SplineViewer url="https://prod.spline.design/kZi5iKuD2QpILoSp/scene.splinecode" />
+          <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
         </div>
         
         <div className="privacy-content">

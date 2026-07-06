@@ -49,7 +49,7 @@ export default function Home() {
         </div>
         
         {/* Right Side Spline 3D Scene Viewport */}
-        <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyMVMtgO8/scene.splinecode" className="hero-canvas-container" />
+        <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" className="hero-canvas-container" />
       </div>
     </section>
 

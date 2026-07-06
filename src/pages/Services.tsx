@@ -15,7 +15,7 @@ export default function Services() {
           <h2 className="section-title">Professional Cleaning Services</h2>
           <p className="section-subtitle">Tailored laundry procedures for every fabric, guaranteeing quality and convenience for Lagos corporate workers.</p>
           {/* Page 3D Object */}
-          <SplineViewer url="https://prod.spline.design/kZi5iKuD2QpILoSp/scene.splinecode" />
+          <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
         </div>
         
         <div className="services-grid">

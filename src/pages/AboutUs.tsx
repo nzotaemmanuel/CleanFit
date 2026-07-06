@@ -30,7 +30,7 @@ export default function AboutUs() {
         </div>
         
         {/* 3D Spline Image wrapper */}
-        <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyMVMtgO8/scene.splinecode" />
+        <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
       </div>
     </section>
 

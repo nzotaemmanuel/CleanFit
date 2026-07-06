@@ -14,7 +14,7 @@ export default function HowItWorks() {
           <h2 className="section-title">Our Step-by-Step Process</h2>
           <p className="section-subtitle">How we make premium garment care completely effortless for busy Lagos corporate clients.</p>
           {/* Page 3D Object */}
-          <SplineViewer url="https://prod.spline.design/kZi5iKuD2QpILoSp/scene.splinecode" />
+          <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
         </div>
         
         <div className="workflow-grid">

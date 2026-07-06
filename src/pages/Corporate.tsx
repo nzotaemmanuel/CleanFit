@@ -15,7 +15,7 @@ export default function Corporate() {
           <span className="section-tag">Business Accounts</span>
           <h2 className="section-title">Corporate Solutions</h2>
           {/* Page 3D Object */}
-          <SplineViewer url="https://prod.spline.design/kZi5iKuD2QpILoSp/scene.splinecode" />
+          <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
           <p >Consistent, professional laundry partnerships for companies, hospitality venues, hotels, event planners, and teams with uniformed staff. We offer tailored schedules and structured monthly invoicing.</p>
           
           <ul className="corporate-features-list">
