@@ -45,8 +45,20 @@ export default function SplineViewer({ url, className, style }: { url: string, c
     <div className={`spline-container ${className || ''}`} style={style} ref={containerRef}>
       {(loading || error) && (
         <div className={`spline-fallback ${error ? 'visible' : ''}`}>
-          <img src="/assets/images/placeholder.jpg" alt="CleanFit Laundry" />
-          <div className="spline-spinner" style={{ display: error ? 'none' : 'block' }}></div>
+          <div className="css-washing-machine">
+            <div className="machine-top">
+              <div className="machine-display">00:00</div>
+              <div className="machine-dial"></div>
+            </div>
+            <div className="machine-drum">
+              <div className="water-wave"></div>
+              <div className="spinning-clothes"></div>
+            </div>
+          </div>
+          <div className="spline-spinner" style={{ display: error ? 'none' : 'flex' }}>
+            <div className="spinner-ring"></div>
+            Loading 3D Experience...
+          </div>
         </div>
       )}
     </div>
