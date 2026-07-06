@@ -73,9 +73,6 @@
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-.page-section.active {
-  /* Retained for backward compatibility if any JS uses it, but not needed for display */
-}
 
 /* 3D Spline Fallback Graphics & Spinner */
 .spline-fallback {
