@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import SplineViewer from '../components/SplineViewer';
 
 export default function AboutUs() {
   return (
@@ -30,8 +29,7 @@ export default function AboutUs() {
         </div>
         
         {/* 3D Spline Image wrapper */}
-        <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
-      </div>
+</div>
     </section>
 
     

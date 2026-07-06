@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import SplineViewer from '../components/SplineViewer';
 // @ts-ignore
 import { PricingCalculator } from '../calculator';
 
@@ -20,8 +19,7 @@ export default function Pricing() {
           <h2 className="section-title">Transparent Price List</h2>
           <p className="section-subtitle">No hidden fees. Estimate your bill instantly with our interactive pricing calculator and book in one click.</p>
           {/* Page 3D Object */}
-          <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
-        </div>
+</div>
         
         {/* Interactive Pricing Calculator */}
         <div className="calculator-card">

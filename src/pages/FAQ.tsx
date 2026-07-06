@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import SplineViewer from '../components/SplineViewer';
 
 export default function FAQ() {
   return (
@@ -14,8 +13,7 @@ export default function FAQ() {
           <h2 className="section-title">Frequently Asked Questions</h2>
           <p className="section-subtitle">Find immediate answers to common questions about garment care, pickup zones, and invoicing.</p>
           {/* Page 3D Object */}
-          <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
-        </div>
+</div>
         
         {/* Accordion Search Input */}
         <div className="faq-search-wrapper">

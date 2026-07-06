@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import SplineViewer from '../components/SplineViewer';
 
 export default function Contact() {
   return (
@@ -14,8 +13,7 @@ export default function Contact() {
           <h2 className="section-title">Get In Touch</h2>
           <p className="section-subtitle">Have questions or want to request custom logistics? Drop us a line or visit our Oreyo office.</p>
           {/* Page 3D Object */}
-          <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
-        </div>
+</div>
         
         <div className="contact-grid">
           {/* Information sidebar */}

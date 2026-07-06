@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
-import SplineViewer from '../components/SplineViewer';
 
 export default function Services() {
   return (
@@ -15,8 +14,7 @@ export default function Services() {
           <h2 className="section-title">Professional Cleaning Services</h2>
           <p className="section-subtitle">Tailored laundry procedures for every fabric, guaranteeing quality and convenience for Lagos corporate workers.</p>
           {/* Page 3D Object */}
-          <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
-        </div>
+</div>
         
         <div className="services-grid">
           

@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import SplineViewer from '../components/SplineViewer';
 
 export default function Privacy() {
   return (
@@ -13,8 +12,7 @@ export default function Privacy() {
           <h2 className="section-title">Privacy Policy</h2>
           <p >Last updated: July 2026</p>
           {/* Page 3D Object */}
-          <SplineViewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
-        </div>
+</div>
         
         <div className="privacy-content">
           <p>CleanFit ("we," "us," or "our") values your privacy. This policy outlines how we collect, store, and process your personal data in accordance with the <strong>Nigeria Data Protection Act (NDPA) 2023</strong> when you use our website, book a laundry pickup, or register a corporate account.</p>
